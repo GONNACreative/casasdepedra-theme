@@ -1,0 +1,88 @@
+// Billboard
+
+$class: "billboard";
+
+.#{$class} {
+  float: left;
+  min-height: 512px;
+  padding: 64px 0 0;
+  width: 960px;
+  .#{$class}-box {
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      width: 100%;
+      img {
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    padding: 32px 0 0;
+    width: 240px;
+    .#{$class}-box {
+      .#{$class}-item {
+        img {
+          max-width: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    width: 360px;
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    width: 480px;
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    width: 720px;
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    width: 960px;
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    width: 960px;
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

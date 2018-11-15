@@ -1,0 +1,26 @@
+<!-- Head -->
+
+<head>
+  {% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e("html") }} | {% endif %}{{ site.title|e("html") }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "partials/metadata.html.twig" %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss("theme://vendor/assets/stylesheets/normalize.css", 100) %}
+        {% do assets.addCss("theme://css-compiled/mies.css", 99) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs("jquery", 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+  {% endblock head%}
+</head>

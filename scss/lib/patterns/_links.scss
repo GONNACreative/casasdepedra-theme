@@ -1,0 +1,67 @@
+// Links
+
+.link {
+  @include link-default-theme;
+  @include link-small-size;
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Sizes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.nano {
+    @include link-nano-size;
+  }
+  &.tiny {
+    @include link-tiny-size;
+  }
+  &.small {
+    @include link-small-size;
+  }
+  &.medium {
+    @include link-medium-size;
+  }
+  &.large {
+    @include link-large-size;
+  }
+  &.extra-large {
+    @include link-extra-large-size;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Themes
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.gray {
+    @include link-gray-theme;
+  }
+  &.blue {
+    @include link-blue-theme;
+  }
+  &.green {
+    @include link-green-theme;
+  }
+  &.yellow {
+    @include link-yellow-theme;
+  }
+  &.orange {
+    @include link-orange-theme;
+  }
+  &.red {
+    @include link-red-theme;
+  }
+  &.purple {
+    @include link-purple-theme;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Inner elements
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  .icon {
+    background-color: $black;
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Misc
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  &.hover-underline {
+    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

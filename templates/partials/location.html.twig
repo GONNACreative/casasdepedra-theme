@@ -1,0 +1,28 @@
+<!-- Location -->
+
+<div class="location">
+  <div class="location-box">
+    <div class="location-item">
+      <h2 class="text-center">Location</h2>
+    </div>
+    <div class="location-item">
+      <div class="center-h-parent">
+        <div class="center-h-child">
+          {% for asset in config.plugins.casasdepedra.location_document %}
+            <a href="{{ asset.path }}" target="_blank">{{ config.plugins.casasdepedra.location_document_label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="location-item">
+      <p class="text-center">
+        {{ config.plugins.casasdepedra.location_address_one }} <br />
+        {{ config.plugins.casasdepedra.location_address_two }}, {{ config.plugins.casasdepedra.location_city }} <br />
+        {{ config.plugins.casasdepedra.location_postcode }}
+      </p>
+      <p class="text-center">
+        <strong>{{ config.plugins.casasdepedra.location_region }} | {{ config.plugins.casasdepedra.location_country }}</strong>
+      </p>
+    </div>
+  </div>
+</div>

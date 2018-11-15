@@ -1,0 +1,161 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black-050;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.lighter {
+    font-weight: lighter;
+  }
+}
+
+p {
+  color: $black-085;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 8px 0;
+  padding: 0;
+  width: 100%;
+  &.no-margin {
+    margin: 0;
+  }
+  &.ultra-nano {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &.nano {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &.tiny {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &.small {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &.medium {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  &.large {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  &.extra-large {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &.strong {
+    font-weight: bold;
+    letter-spacing: .05em;
+  }
+  a {
+    @include hover-animation(.20s);
+    @include link-default-theme;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+}
+
+blockquote {
+  background-color: $gray;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 32px;
+  padding: 16px;
+  width: auto;
+  footer {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  margin: 32px;
+  padding: 0;
+  width: auto;
+  li {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+abbr,
+code,
+del,
+em,
+mark,
+small,
+strong {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+abbr   { cursor: help; }
+code   { font-size: 14px; }
+del    { text-decoration: line-through; }
+em     { font-style: italic; }
+mark   { background-color: $yellow; }
+small  { font-size: 70%; }
+strong { font-weight: bold; }

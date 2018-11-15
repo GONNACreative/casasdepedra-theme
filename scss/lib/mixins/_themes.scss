@@ -1,0 +1,267 @@
+// Themes
+
+// Button
+
+// Button default theme
+@mixin button-default-theme {
+  background-color: $gray-500;
+  color: $gray-000;
+  &:link,
+  &:visited {
+    background-color: $gray-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $gray-600;
+  }
+}
+
+// Button gray theme
+@mixin button-gray-theme {
+  background-color: $gray-500;
+  color: $gray-000;
+  &:link,
+  &:visited {
+    background-color: $gray-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $gray-600;
+  }
+}
+
+// Button blue theme
+@mixin button-blue-theme {
+  background-color: $blue-500;
+  color: $blue-000;
+  &:link,
+  &:visited {
+    background-color: $blue-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $blue-600;
+  }
+}
+
+// Button green theme
+@mixin button-green-theme {
+  background-color: $green-500;
+  color: $green-000;
+  &:link,
+  &:visited {
+    background-color: $green-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $green-600;
+  }
+}
+
+// Button yellow theme
+@mixin button-yellow-theme {
+  background-color: $yellow-500;
+  color: $yellow-000;
+  &:link,
+  &:visited {
+    background-color: $yellow-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $yellow-600;
+  }
+}
+
+// Button orange theme
+@mixin button-orange-theme {
+  background-color: $orange-500;
+  color: $orange-000;
+  &:link,
+  &:visited {
+    background-color: $orange-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $orange-600;
+  }
+}
+
+// Button red theme
+@mixin button-red-theme {
+  background-color: $red-500;
+  color: $red-000;
+  &:link,
+  &:visited {
+    background-color: $red-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $red-600;
+  }
+}
+
+// Button purple theme
+@mixin button-purple-theme {
+  background-color: $purple-500;
+  color: $purple-000;
+  &:link,
+  &:visited {
+    background-color: $purple-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $purple-600;
+  }
+}
+
+// Link
+
+// Link default theme
+@mixin link-default-theme {
+  color: $gray-500;
+  &:link,
+  &:visited {
+    color: $gray-500;
+  }
+  &:hover,
+  &:active {
+    color: $gray-600;
+  }
+}
+
+// Link gray theme
+@mixin link-gray-theme {
+  color: $gray-500;
+  &:link,
+  &:visited {
+    color: $gray-500;
+  }
+  &:hover,
+  &:active {
+    color: $gray-600;
+  }
+}
+
+// Link blue theme
+@mixin link-blue-theme {
+  color: $blue-500;
+  &:link,
+  &:visited {
+    color: $blue-500;
+  }
+  &:hover,
+  &:active {
+    color: $blue-600;
+  }
+}
+
+// Link green theme
+@mixin link-green-theme {
+  color: $green-500;
+  &:link,
+  &:visited {
+    color: $green-500;
+  }
+  &:hover,
+  &:active {
+    color: $green-600;
+  }
+}
+
+// Link yellow theme
+@mixin link-yellow-theme {
+  color: $yellow-500;
+  &:link,
+  &:visited {
+    color: $yellow-500;
+  }
+  &:hover,
+  &:active {
+    color: $yellow-600;
+  }
+}
+
+// Link orange theme
+@mixin link-orange-theme {
+  color: $orange-500;
+  &:link,
+  &:visited {
+    color: $orange-500;
+  }
+  &:hover,
+  &:active {
+    color: $orange-600;
+  }
+}
+
+// Link red theme
+@mixin link-red-theme {
+  color: $red-500;
+  &:link,
+  &:visited {
+    color: $red-500;
+  }
+  &:hover,
+  &:active {
+    color: $red-600;
+  }
+}
+
+// Link purple theme
+@mixin link-purple-theme {
+  color: $purple-500;
+  &:link,
+  &:visited {
+    color: $purple-500;
+  }
+  &:hover,
+  &:active {
+    color: $purple-600;
+  }
+}
+
+// Classes
+
+// Button
+
+// Button default theme
+.button-default-theme {
+  @include button-default-theme;
+}
+
+// Button blue theme
+.button-blue-theme {
+  @include button-blue-theme;
+}
+
+// Button green theme
+.button-green-theme {
+  @include button-green-theme;
+}
+
+// Button yellow theme
+.button-yellow-theme {
+  @include button-yellow-theme;
+}
+
+// Button orange theme
+.button-orange-theme {
+  @include button-orange-theme;
+}
+
+// Button red theme
+.button-red-theme {
+  @include button-red-theme;
+}
+
+// Button purple theme
+.button-purple-theme {
+  @include button-purple-theme;
+}
+
+// Link
+
+// Link default theme
+.link-default-theme {
+  @include link-default-theme;
+}

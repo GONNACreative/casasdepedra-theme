@@ -1,0 +1,105 @@
+// Universal
+
+$class: "universal";
+
+.#{$class} {
+  @include border-box;
+  @include clearfix;
+  float: left;
+  margin: 0 auto;
+  min-width: 1260px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  .#{$class}-box {
+    @include border-box;
+    @include clearfix;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 1260px;
+    .#{$class}-item {
+      @include border-box;
+      @include clearfix;
+      float: left;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    min-width: 240px;
+    .#{$class}-box {
+      width: 240px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    min-width: 360px;
+    .#{$class}-box {
+      width: 360px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    min-width: 480px;
+    .#{$class}-box {
+      width: 480px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    min-width: 720px;
+    .#{$class}-box {
+      width: 720px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    min-width: 960px;
+    .#{$class}-box {
+      width: 960px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    min-width: 1260px;
+    .#{$class}-box {
+      width: 1260px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}

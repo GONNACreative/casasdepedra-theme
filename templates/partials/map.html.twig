@@ -1,0 +1,18 @@
+<!-- Map -->
+
+<div class="map">
+  <div class="map-box">
+    <div class="map-item">
+      <h2 class="text-center">{{ config.plugins.casasdepedra.map_title }}</h2>
+    </div>
+    <div class="map-item">
+      <div class="center-h-parent">
+        <div class="center-h-child">
+          {% for asset in config.plugins.casasdepedra.map_image %}
+            <img src="{{ asset.path }}" />
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

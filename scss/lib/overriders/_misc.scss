@@ -1,0 +1,12 @@
+// Misc
+
+// Remove tap highlight
+.button,
+.link,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: $tap;
+}

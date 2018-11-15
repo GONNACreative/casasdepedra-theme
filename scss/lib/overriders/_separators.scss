@@ -1,0 +1,29 @@
+// Separators
+
+.separator {
+  appearance: none;
+  border: 0;
+  float: left;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  &.nano {
+    margin: 4px 0;
+  }
+  &.tiny {
+    margin: 8px 0;
+  }
+  &.small {
+    margin: 16px 0;
+  }
+  &.medium {
+    margin: 32px 0;
+  }
+  &.large {
+    margin: 48px 0;
+  }
+  &.extra-large {
+    margin: 64px 0;
+  }
+}

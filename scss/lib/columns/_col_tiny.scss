@@ -1,0 +1,39 @@
+// Column tiny
+
+$width: 360px;
+$class: "col-tiny";
+
+@import "lib/columns/col_setup";
+@import "lib/columns/col_math";
+
+// Media Queries
+
+@media #{$nano} {
+  $width: 240px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$tiny} {
+  $width: 360px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$small} {
+  $width: 360px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$medium} {
+  $width: 360px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$large} {
+  $width: 360px;
+  @import "lib/columns/col_math";
+}
+
+@media all and #{$extra-large} {
+  $width: 360px;
+  @import "lib/columns/col_math";
+}

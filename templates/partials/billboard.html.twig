@@ -1,0 +1,14 @@
+<!-- Billboard -->
+
+<div class="billboard">
+  <div class="billboard-box ">
+    <div class="billboard-item">
+      {% for asset in config.plugins.casasdepedra.billboard_image %}
+        <img src="{{ asset.path }}" />
+      {% endfor %}
+    </div>
+    <div class="billboard-item">
+      <p class="text-center">{{ config.plugins.casasdepedra.billboard_description }}</p>
+    </div>
+  </div>
+</div>

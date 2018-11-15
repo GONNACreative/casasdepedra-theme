@@ -1,0 +1,13 @@
+<!-- Base -->
+
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+  {% include "partials/head.html.twig" %}
+  <body id="top" class="{{ page.header.body_classes }}">
+    {% include "partials/header.html.twig" %}
+    {% include "partials/hero.html.twig" %}
+    {% include "partials/main.html.twig" %}
+    {% include "partials/footer.html.twig" %}
+  </body>
+</html>
