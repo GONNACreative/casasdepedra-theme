@@ -1,14 +1,23 @@
 <!-- Billboard -->
 
-<div class="billboard">
-  <div class="billboard-box ">
-    <div class="billboard-item">
-      {% for asset in config.plugins.casasdepedra.billboard_image %}
-        <img src="{{ asset.path }}" />
-      {% endfor %}
-    </div>
-    <div class="billboard-item">
-      <p class="text-center">{{ config.plugins.casasdepedra.billboard_description }}</p>
+<div class="center-h-parent">
+  <div class="center-h-child">
+    <div class="billboard">
+      <div class="billboard-box ">
+        <div class="billboard-item">
+          <div class="center-h-parent">
+            <div class="center-h-child">
+              {% for asset in config.plugins.casasdepedra.billboard_image %}
+                <img src="{{ asset.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="separator tiny"></div>
+        <div class="billboard-item">
+          <p class="text-center no-margin">{{ config.plugins.casasdepedra.billboard_description }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

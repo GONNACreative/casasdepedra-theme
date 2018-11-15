@@ -6,8 +6,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $black-050;
-  font-weight: 100;
+  color: $gray-400;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -55,7 +55,7 @@ h6 {
 }
 
 p {
-  color: $black-085;
+  color: $gray-500;
   font-size: 18px;
   line-height: 24px;
   margin: 8px 0;
@@ -99,6 +99,7 @@ p {
   a {
     @include hover-animation(.20s);
     @include link-default-theme;
+    color: $orange-500 !important;
     display: inline-block;
     font-size: inherit;
     line-height: inherit;
