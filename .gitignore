@@ -1,2 +1,15 @@
-.DS_store
+.DS_Store
 .sass-cache
+NOTES.md
+
+# Ignore building resources
+/resources
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
