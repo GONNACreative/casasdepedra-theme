@@ -3,8 +3,18 @@
 {% block main %}
   <div class="universal main gray-100-bg">
     <div class="universal-box">
-      <div class="universal-item editor">
-        {{ page.content|raw }}
+      <div class="universal-item">
+        {% if home_url %}
+          <div class="center-h-parent">
+            <div class="center-h-child">
+              <div class="padded-box left white-100-bg">
+                {{ page.content|raw }}
+              </div>
+            </div>
+          </div>
+        {% else %}
+          {{ page.content|raw }}
+        {% endif %}
       </div>
     </div>
   </div>
