@@ -20,6 +20,9 @@
 
     {% block javascripts %}
         {% do assets.addJs("jquery", 100) %}
+        {% do assets.addJs("theme://js/altai_off.js", 99) %}
+        {% do assets.addJs("theme://js/altai_scroll.js", 99) %}
+        {% do assets.addJs("theme://js/main.js", 000) %}
     {% endblock %}
     {{ assets.js() }}
   {% endblock head%}

@@ -3,7 +3,6 @@
 $class: "navigation";
 
 .#{$class} {
-  float: right;
   .#{$class}-box {
     @include clear-list;
     float: left;

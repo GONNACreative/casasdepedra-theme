@@ -6,7 +6,7 @@
   {% include "partials/head.html.twig" %}
   <body id="top" class="{{ page.header.body_classes }}">
     {% include "partials/header.html.twig" %}
-    {% if home_url %}
+    {% if page.home == true %}
       {% include "partials/hero.html.twig" %}
     {% endif %}
     {% include "partials/main.html.twig" %}

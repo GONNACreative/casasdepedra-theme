@@ -1409,21 +1409,19 @@ strong {
       float: left;
       padding: 8px; }
 
-.navigation {
-  float: right; }
-  .navigation .navigation-box {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: left; }
-    .navigation .navigation-box .navigation-item {
-      float: left;
-      padding: 8px; }
-      .navigation .navigation-box .navigation-item .link {
-        font-weight: bold;
-        padding: 14px 0;
-        text-decoration: none;
-        text-transform: uppercase; }
+.navigation .navigation-box {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left; }
+  .navigation .navigation-box .navigation-item {
+    float: left;
+    padding: 8px; }
+    .navigation .navigation-box .navigation-item .link {
+      font-weight: bold;
+      padding: 14px 0;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .billboard {
   float: left;
