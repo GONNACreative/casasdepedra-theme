@@ -14,12 +14,12 @@ $class: "col-nano";
 }
 
 @media #{$tiny} {
-  $width: 240px;
+  $width: 360px;
   @import "lib/columns/col_math";
 }
 
 @media #{$small} {
-  $width: 240px;
+  $width: 480px;
   @import "lib/columns/col_math";
 }
 

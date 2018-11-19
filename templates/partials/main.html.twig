@@ -4,16 +4,39 @@
   <div class="universal main gray-100-bg">
     <div class="universal-box">
       <div class="universal-item">
-        {% if home_url %}
+        {% if page.home == true %}
           <div class="center-h-parent">
             <div class="center-h-child">
-              <div class="padded-box left white-100-bg">
-                {{ page.content|raw }}
+              <div class="content col-large-1-1">
+                <div class="content-box">
+                  <div class="content-item">
+                    {{ page.content|raw }}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         {% else %}
-          {{ page.content|raw }}
+          <div class="center-h-parent">
+            <div class="center-h-child">
+              <div class="left col-large-1-1">
+                <div class="content col-small-1-1">
+                  <div class="content-box">
+                    <div class="content-item">
+                      {{ page.content|raw }}
+                    </div>
+                  </div>
+                </div>
+                <div class="aside right col-nano-1-1">
+                  <div class="aside-box">
+                    <div class="aside-item">
+                      {{ page.content|raw }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         {% endif %}
       </div>
     </div>

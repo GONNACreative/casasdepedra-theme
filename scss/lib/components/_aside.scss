@@ -1,9 +1,10 @@
-// Content
+// Aside
 
-$class: "content";
+$class: "aside";
 
 .#{$class} {
   float: left;
+  width: 240px;
   .#{$class}-box {
     float: left;
     .#{$class}-item {

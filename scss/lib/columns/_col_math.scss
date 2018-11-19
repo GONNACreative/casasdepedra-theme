@@ -1,6 +1,6 @@
 // Column Math
 
-.#{$class}-1-1 { width: (($width / 1) * 1); }
+.#{$class}-1-1 { width: (($width / 1) * 1) !important; }
 .#{$class}-2-1 { width: (($width / 2) * 1); }
 .#{$class}-2-2 { width: (($width / 2) * 2); }
 .#{$class}-3-1 { width: (($width / 3) * 1); }
