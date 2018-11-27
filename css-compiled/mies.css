@@ -1401,6 +1401,13 @@ small {
 strong {
   font-weight: bold; }
 
+@media (max-width: 359px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px; }
+    h1.extra-large {
+      font-size: 48px;
+      line-height: 56px; } }
 .branding {
   float: left; }
   .branding .branding-box {

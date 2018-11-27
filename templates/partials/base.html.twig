@@ -5,28 +5,23 @@
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
   {% include "partials/head.html.twig" %}
   <body id="top" class="{{ page.header.body_classes }}">
+    <!-- Header -->
     {% include "partials/header.html.twig" %}
+    <!-- Hero -->
     {% if page.home == true %}
       {% include "partials/hero.html.twig" %}
     {% endif %}
-
+    <!-- Main -->
     {% if page.template == "left" %}
       {% include "partials/main_left.html.twig" %}
-      <p>{{ page.template }}</p>
-
     {% elseif page.template == "wide" %}
       {% include "partials/main_wide.html.twig" %}
-      <p>{{ page.template }}</p>
-
     {% elseif page.template == "right" %}
       {% include "partials/main_right.html.twig" %}
-      <p>{{ page.template }}</p>
-
     {% else %}
       {% include "partials/main.html.twig" %}
-      <p>{{ page.template }}</p>
     {% endif %}
-
-      {% include "partials/footer.html.twig" %}
+    <!-- Footer -->
+    {% include "partials/footer.html.twig" %}
   </body>
 </html>
