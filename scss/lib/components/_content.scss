@@ -6,9 +6,11 @@ $class: "content";
   float: left;
   .#{$class}-box {
     float: left;
+    width: 100%;
     .#{$class}-item {
       float: left;
       padding: 8px;
+      width: 100%;
     }
   }
 }

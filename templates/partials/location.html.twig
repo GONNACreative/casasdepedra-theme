@@ -1,5 +1,6 @@
 <!-- Location -->
 
+
 <div class="location" id="location">
   <div class="location-box">
     <div class="location-item">
@@ -9,7 +10,7 @@
       <div class="center-h-parent">
         <div class="center-h-child">
           {% for asset in config.plugins.casasdepedra.location_document %}
-            <a href="{{ asset.path }}" class="button small orange" target="_blank">{{ config.plugins.casasdepedra.location_document_label }}</a>
+            <a href="{{ url(asset.path) }}" class="button small orange" target="_blank">{{ config.plugins.casasdepedra.location_document_label }}</a>
           {% endfor %}
         </div>
       </div>

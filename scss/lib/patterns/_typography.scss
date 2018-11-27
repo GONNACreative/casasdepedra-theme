@@ -7,7 +7,7 @@ h4,
 h5,
 h6 {
   color: $gray-700;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16,6 +16,10 @@ h6 {
 h1 {
   font-size: 32px;
   line-height: 40px;
+  &.extra-large {
+    font-size: 64px;
+    line-height: 80px;
+  }
 }
 
 h2 {

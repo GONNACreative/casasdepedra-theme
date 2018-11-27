@@ -9,7 +9,7 @@
       <div class="center-h-parent">
         <div class="center-h-child">
           {% for asset in config.plugins.casasdepedra.map_image %}
-            <img src="{{ asset.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+            <img src="{{ url(asset.path) }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
           {% endfor %}
         </div>
       </div>
