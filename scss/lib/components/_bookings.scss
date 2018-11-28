@@ -1,17 +1,27 @@
-// Content
+// Bookings
 
-$class: "content";
+$class: "bookings";
 
 .#{$class} {
+  @include border-box;
   float: left;
   width: 100%;
   .#{$class}-box {
+    @include border-box;
+    @include clear-list;
     float: left;
-    width: 100%;
+    width: auto;
     .#{$class}-item {
+      @include border-box;
       float: left;
-      padding: 8px;
-      width: 100%;
+      padding: 4px;
+      width: auto;
+      a {
+        @include border-box;
+        min-width: 196px;
+        text-align: center;
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -20,8 +30,15 @@ $class: "content";
 
 @media #{$nano} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 224px;
       .#{$class}-item {
+        padding: 4px 0;
+        width: 100%;
+        a {
+          width: 100%;
+        }
       }
     }
   }
@@ -29,8 +46,15 @@ $class: "content";
 
 @media #{$tiny} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 344px;
       .#{$class}-item {
+        padding: 4px 0;
+        width: 100%;
+        a {
+          width: 100%;
+        }
       }
     }
   }
@@ -38,8 +62,15 @@ $class: "content";
 
 @media #{$small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 464px;
       .#{$class}-item {
+        width: 100%;
+        padding: 4px 0;
+        a {
+          width: 100%;
+        }
       }
     }
   }

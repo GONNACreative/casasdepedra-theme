@@ -1,4 +1,4 @@
-<!-- Main Wide -->
+<!-- Main List -->
 
 {% block main_wide %}
   <div class="content col-large-1-1">
@@ -19,6 +19,11 @@
           {{ image.lightbox(1024,768).cropZoom(100,50).html() }}
         </div>
       {% endfor %}
+      <ul>
+        {% for item in page.children if item != page %}
+          <li><a href="{{item.url}}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 {% endblock %}

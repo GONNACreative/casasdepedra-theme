@@ -1,0 +1,73 @@
+<!-- Main Right -->
+
+{% block main_right %}
+  <div class="content left col-large-1-1">
+    <div class="content-box">
+      {% if page.header.title != "" %}
+        <div class="content-item">
+          <h1 class="extra-large text-center no-margin orange-500-cl">{{ page.header.title }}</h1>
+          {% if page.header.price_label != "" %}
+            <p class="nano text-center no-margin gray-700-cl"><strong>{{ page.header.price_label }}</strong></p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.header.reservations != "" %}
+        <div class="content-item">
+          <h5 class="text-center no-margin gray-500-cl">Reservations</h5>
+        </div>
+        <div class="content-item">
+          <div class="bookings">
+            <div class="center-h-parent">
+              <div class="center-h-child">
+                <ul class="bookings-box">
+                  {% for key, reservation in page.header.reservations %}
+                    <li class="bookings-item">
+                      <a href="{{ reservation }}" target="_blank" class="button orange">{{ key }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if page.header.cover_image != "" %}
+        <div class="content-item">
+          {% for asset in page.header.cover_image %}
+            <img src="{{ url(asset.path) }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="content left col-small-1-1">
+    <div class="content-box">
+      {% if page.content != "" %}
+        <div class="content-item">
+          {{ page.content|raw }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="aside right col-nano-1-1">
+    <div class="aside-box">
+      {% if page.header.sidebar_content != "" %}
+        <div class="aside-item">
+          {{ page.header.sidebar_content|markdown }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if page.media.images != "" %}
+    <div class="content left col-large-1-1">
+      <div class="content-box">
+        {% for image in page.media.images %}
+          <div class="content-item col-large-3-1">
+            {{ image.lightbox(960,640).cropZoom(604,340).html("Casas de Pedra", "Thumbnail") }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

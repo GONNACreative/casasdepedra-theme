@@ -1,0 +1,25 @@
+@extends:
+  type: default
+  context: blueprints://pages
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          fields:
+            # Price label
+            header.price_label:
+              type: text
+              label: "Price label"
+              size: long
+              style: vertical
+
+            header.reservations:
+               type: array
+               label: "Reservations"
+               placeholder_key: "Key"
+               placeholder_value: "Value"

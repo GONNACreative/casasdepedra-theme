@@ -53,6 +53,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 16px;
   &.lighter {
     font-weight: lighter;
   }
@@ -63,7 +64,7 @@ p {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  margin: 16px 0;
+  margin: 0 0 16px;
   padding: 0;
   width: 100%;
   &.no-margin {
@@ -170,16 +171,20 @@ strong { font-weight: bold; }
 
 @media #{$nano} {
   h1 {
-    font-size: 32px;
-    line-height: 40px;
     &.extra-large {
-      font-size: 48px;
-      line-height: 56px;
+      font-size: 32px;
+      line-height: 40px;
     }
   }
 }
 
 @media #{$tiny} {
+  h1 {
+    &.extra-large {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
 }
 
 @media #{$small} {
