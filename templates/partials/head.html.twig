@@ -20,9 +20,10 @@
 
     {% block javascripts %}
         {% do assets.addJs("jquery", 100) %}
-        {% do assets.addJs("theme://js/altai_off.js", 99) %}
-        {% do assets.addJs("theme://js/altai_scroll.js", 98) %}
-        {% do assets.addJs("theme://js/altai_toggle.js", 97) %}
+        {% do assets.addJs("theme://js/altai_center.js", 99) %}
+        {% do assets.addJs("theme://js/altai_off.js", 98) %}
+        {% do assets.addJs("theme://js/altai_scroll.js", 97) %}
+        {% do assets.addJs("theme://js/altai_toggle.js", 96) %}
         {% do assets.addJs("theme://js/main.js", 000) %}
     {% endblock %}
     {{ assets.js() }}

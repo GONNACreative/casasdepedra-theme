@@ -1,0 +1,133 @@
+// Houses
+
+$class: "houses";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      width: 100%;
+    }
+    .#{$class}-left {
+      background-color: $white;
+      float: left;
+      padding: 32px;
+      width: 50%;
+    }
+    .#{$class}-right {
+      background-color: $white;
+      float: left;
+      height: 297px;
+      padding: 32px;
+      width: 50%;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$nano} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+      .#{$class}-left {
+        padding: 16px 16px 8px;
+        width: 100%;
+      }
+      .#{$class}-right {
+        height: auto;
+        padding: 8px 16px 16px;
+        width: 100%;
+        .price-label,
+        .button {
+          text-align: center;
+          width: 176px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+      .#{$class}-left {
+        padding: 32px 32px 8px;
+        width: 100%;
+      }
+      .#{$class}-right {
+        height: auto;
+        padding: 8px 32px 32px;
+        width: 100%;
+        .price-label,
+        .button {
+          text-align: center;
+          width: 264px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+      .#{$class}-left {
+        padding: 32px 32px 8px;
+        width: 100%;
+      }
+      .#{$class}-right {
+        height: auto;
+        padding: 8px 32px 32px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+      .#{$class}-left {
+        padding: 32px 32px 8px;
+        width: 100%;
+      }
+      .#{$class}-right {
+        height: auto;
+        padding: 8px 32px 32px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$extra-large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

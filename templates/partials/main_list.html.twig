@@ -14,16 +14,40 @@
       <div class="content-item">
         {{ page.content|raw }}
       </div>
+
+      <div class="content-item col-large-1-1 altai-center">
+        <div class="houses">
+          <ul class="houses-box">
+            {% for item in page.children if item != page %}
+              <li class="houses-item">
+                <div class="houses-left">
+                  {% for image in item.header.cover_image %}
+                    <img src="{{ image.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+                  {% endfor %}
+                </div>
+                <div class="houses-right">
+                  <a href="{{item.url}}" class="link large gray wide hover-underline">{{ item.title }}</a>
+                  <div class="separator tiny"></div>
+                  <p class="tiny wide left">{{ item.header.house_description }}</p>
+                  <div class="separator small"></div>
+                  <div class="wrap-left auto">
+                    <p class="nano left no-margin price-label gray-700-cl">{{ item.header.price_label }}</p>
+                  </div>
+                  <div class="wrap-right auto">
+                    <a href="{{item.url}}" class="button small pink hover-underline left">More Information</a>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
       {% for image in page.media.images %}
         <div class="content-item col-large-3-1">
           {{ image.lightbox(1024,768).cropZoom(100,50).html() }}
         </div>
       {% endfor %}
-      <ul>
-        {% for item in page.children if item != page %}
-          <li><a href="{{item.url}}">{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
     </div>
   </div>
 {% endblock %}

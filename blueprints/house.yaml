@@ -12,6 +12,13 @@ form:
         content:
           type: tab
           fields:
+            # House Description
+            header.house_description:
+              type: textarea
+              label: "House Description"
+              rows: 4
+              size: long
+              style: vertical
             # Price label
             header.price_label:
               type: text

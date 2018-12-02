@@ -1,6 +1,7 @@
 // Main
 
 bindEvents = function() {
+  $(".altai-center").altaiCenter();
   $(".altai-off").altaiOff();
   $(".altai-scroll").altaiScroll();
   $(".altai-toggle").altaiToggle();

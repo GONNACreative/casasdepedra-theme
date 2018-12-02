@@ -1642,6 +1642,71 @@ strong {
       padding: 8px;
       width: 100%; }
 
+.houses {
+  float: left;
+  width: 100%; }
+  .houses .houses-box {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%; }
+    .houses .houses-box .houses-item {
+      float: left;
+      padding: 8px;
+      width: 100%; }
+    .houses .houses-box .houses-left {
+      background-color: white;
+      float: left;
+      padding: 32px;
+      width: 50%; }
+    .houses .houses-box .houses-right {
+      background-color: white;
+      float: left;
+      height: 297px;
+      padding: 32px;
+      width: 50%; }
+
+@media (max-width: 359px) {
+  .houses .houses-box .houses-left {
+    padding: 16px 16px 8px;
+    width: 100%; }
+  .houses .houses-box .houses-right {
+    height: auto;
+    padding: 8px 16px 16px;
+    width: 100%; }
+    .houses .houses-box .houses-right .price-label,
+    .houses .houses-box .houses-right .button {
+      text-align: center;
+      width: 176px; } }
+@media (min-width: 360px) and (max-width: 479px) {
+  .houses .houses-box .houses-left {
+    padding: 32px 32px 8px;
+    width: 100%; }
+  .houses .houses-box .houses-right {
+    height: auto;
+    padding: 8px 32px 32px;
+    width: 100%; }
+    .houses .houses-box .houses-right .price-label,
+    .houses .houses-box .houses-right .button {
+      text-align: center;
+      width: 264px; } }
+@media (min-width: 480px) and (max-width: 719px) {
+  .houses .houses-box .houses-left {
+    padding: 32px 32px 8px;
+    width: 100%; }
+  .houses .houses-box .houses-right {
+    height: auto;
+    padding: 8px 32px 32px;
+    width: 100%; } }
+@media (min-width: 720px) and (max-width: 959px) {
+  .houses .houses-box .houses-left {
+    padding: 32px 32px 8px;
+    width: 100%; }
+  .houses .houses-box .houses-right {
+    height: auto;
+    padding: 8px 32px 32px;
+    width: 100%; } }
 .bookings {
   box-sizing: border-box;
   float: left;
@@ -10475,6 +10540,16 @@ a {
 
 .no-margin {
   margin: 0 !important; }
+
+.auto {
+  width: auto !important; }
+
+.inline-block {
+  display: inline-block !important; }
+
+.price-label {
+  font-weight: bold;
+  line-height: 40px !important; }
 
 .header {
   margin: 0;
