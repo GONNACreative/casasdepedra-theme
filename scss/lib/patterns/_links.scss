@@ -30,6 +30,9 @@
   &.gray {
     @include link-gray-theme;
   }
+  &.pink {
+    @include link-pink-theme;
+  }
   &.blue {
     @include link-blue-theme;
   }

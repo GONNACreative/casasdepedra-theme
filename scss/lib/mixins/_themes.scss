@@ -30,6 +30,20 @@
   }
 }
 
+// Button pink theme
+@mixin button-pink-theme {
+  background-color: $pink-500;
+  color: $pink-000;
+  &:link,
+  &:visited {
+    background-color: $pink-500;
+  }
+  &:hover,
+  &:active {
+    background-color: $pink-600;
+  }
+}
+
 // Button blue theme
 @mixin button-blue-theme {
   background-color: $blue-500;
@@ -139,6 +153,19 @@
   &:hover,
   &:active {
     color: $gray-600;
+  }
+}
+
+// Link pink theme
+@mixin link-pink-theme {
+  color: $pink-500;
+  &:link,
+  &:visited {
+    color: $pink-500;
+  }
+  &:hover,
+  &:active {
+    color: $pink-600;
   }
 }
 

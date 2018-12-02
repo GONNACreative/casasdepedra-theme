@@ -35,6 +35,9 @@
   &.gray {
     @include button-gray-theme;
   }
+  &.pink {
+    @include button-pink-theme;
+  }
   &.blue {
     @include button-blue-theme;
   }

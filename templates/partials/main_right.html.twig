@@ -5,7 +5,7 @@
     <div class="content-box">
       {% if page.header.title != "" %}
         <div class="content-item">
-          <h1 class="extra-large text-center no-margin orange-500-cl">{{ page.header.title }}</h1>
+          <h1 class="extra-large text-center no-margin pink-500-cl">{{ page.header.title }}</h1>
           {% if page.header.price_label != "" %}
             <p class="nano text-center no-margin gray-700-cl"><strong>{{ page.header.price_label }}</strong></p>
           {% endif %}
@@ -23,7 +23,7 @@
                 <ul class="bookings-box">
                   {% for key, reservation in page.header.reservations %}
                     <li class="bookings-item">
-                      <a href="{{ reservation }}" target="_blank" class="button orange">{{ key }}</a>
+                      <a href="{{ reservation }}" target="_blank" class="button pink">{{ key }}</a>
                     </li>
                   {% endfor %}
                 </ul>

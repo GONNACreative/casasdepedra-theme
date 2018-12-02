@@ -13,3 +13,9 @@ NOTES.md
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+
+# Ignore local development uploads
+/images/*
+!/images/.keep
+/docs/*
+!/docs/.keep

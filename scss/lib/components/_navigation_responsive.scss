@@ -1,21 +1,26 @@
-// Billboard
+// Navigation
 
-$class: "billboard";
+$class: "navigation-responsive";
+
+.#{$class}-wrapper {
+  @include hide-block-element;
+}
 
 .#{$class} {
-  float: left;
-  min-height: 560px;
-  padding: 56px 0;
-  width: 960px;
+  width: 100%;
   .#{$class}-box {
+    @include clear-list;
     float: left;
+    padding: 4px;
     width: 100%;
     .#{$class}-item {
       float: left;
-      padding: 8px;
+      padding: 4px;
       width: 100%;
-      img {
-        max-width: 196px;
+      .button {
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
   }
@@ -24,22 +29,22 @@ $class: "billboard";
 // Media Queries
 
 @media #{$nano} {
+  .#{$class}-wrapper {
+    @include show-block-element;
+  }
   .#{$class} {
-    padding: 32px 0 0;
-    width: 240px;
     .#{$class}-box {
       .#{$class}-item {
-        img {
-          max-width: 240px;
-        }
       }
     }
   }
 }
 
 @media #{$tiny} {
+  .#{$class}-wrapper {
+    @include show-block-element;
+  }
   .#{$class} {
-    width: 360px;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -48,8 +53,10 @@ $class: "billboard";
 }
 
 @media #{$small} {
+  .#{$class}-wrapper {
+    @include show-block-element;
+  }
   .#{$class} {
-    width: 480px;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -58,8 +65,10 @@ $class: "billboard";
 }
 
 @media #{$medium} {
+  .#{$class}-wrapper {
+    @include hide-block-element;
+  }
   .#{$class} {
-    width: 720px;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -68,8 +77,10 @@ $class: "billboard";
 }
 
 @media #{$large} {
+  .#{$class}-wrapper {
+    @include hide-block-element;
+  }
   .#{$class} {
-    width: 960px;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -78,8 +89,10 @@ $class: "billboard";
 }
 
 @media #{$extra-large} {
+  .#{$class}-wrapper {
+    @include hide-block-element;
+  }
   .#{$class} {
-    width: 960px;
     .#{$class}-box {
       .#{$class}-item {
       }

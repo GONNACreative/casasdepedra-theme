@@ -1,8 +1,7 @@
 /*
 * Name: altai_off
 * Title: Altai Off
-* Version: v1.1.2
-* Description: Disable anchor href attributes.
+* Description: Disable anchor href default behaviour.
 *
 */
 
@@ -48,7 +47,7 @@ var jQuery;
       if (object.length > 0) {
         return this.each(function() {
           action();
-          log("Altai off activated");
+          log("Altai Off Activated");
         });
       }
     }

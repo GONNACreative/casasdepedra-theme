@@ -25,6 +25,12 @@ $class: "navigation";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        @include hide-block-element;
+      }
+      .#{$class}-item {
+        &.altai-trigger {
+          @include show-block-element;
+        }
       }
     }
   }
@@ -34,6 +40,12 @@ $class: "navigation";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        @include hide-block-element;
+      }
+      .#{$class}-item {
+        &.altai-trigger {
+          @include show-block-element;
+        }
       }
     }
   }
@@ -43,6 +55,12 @@ $class: "navigation";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        @include hide-block-element;
+      }
+      .#{$class}-item {
+        &.altai-trigger {
+          @include show-block-element;
+        }
       }
     }
   }

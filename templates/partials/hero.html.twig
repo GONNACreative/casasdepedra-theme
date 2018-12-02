@@ -1,13 +1,19 @@
 <!-- Hero -->
 
 {% block hero %}
-  <div class="universal hero orange-500-bg">
-    <div class="universal-box">
-      <div class="universal-item">
-        {% include "partials/billboard.html.twig" %}
+    {% if page.header.billboard_background_image != "" %}
+      {% for asset in page.header.billboard_background_image %}
+        <div class="universal hero orange-500-bg" style="background-image: url('{{ asset.path }}');">
+      {% endfor %}
+    {% else %}
+      <div class="universal hero orange-500-bg" style="background-image: url('{{ asset.path }}');">
+    {% endif %}
+      <div class="universal-box">
+        <div class="universal-item">
+          {% include "partials/billboard.html.twig" %}
+        </div>
       </div>
     </div>
-  </div>
   <div class="universal hero">
     <div class="universal-box">
       <div class="universal-item">

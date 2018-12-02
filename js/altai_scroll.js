@@ -1,8 +1,7 @@
 /*
- * Name: altai_panel
- * Title: Altai Panel
- * Version: v1.0.1
- * Description: Expand a given element within the Window.
+ * Name: altai_scroll
+ * Title: Altai Scroll
+ * Description: Navigate to a given id element.
  *
  */
 

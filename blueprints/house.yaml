@@ -1,6 +1,7 @@
 @extends:
   type: default
   context: blueprints://pages
+
 form:
   fields:
     tabs:
@@ -17,7 +18,7 @@ form:
               label: "Price label"
               size: long
               style: vertical
-
+            # Reservations
             header.reservations:
                type: array
                label: "Reservations"

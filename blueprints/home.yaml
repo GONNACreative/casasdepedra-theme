@@ -1,0 +1,52 @@
+@extends:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          fields:
+            # Billboard Title
+            header.billboard_title:
+              type: text
+              label: "Billboard Title"
+              size: long
+            # Billboard Description
+            header.billboard_description:
+              type: textarea
+              label: "Billboard Description"
+              rows: 4
+              size: long
+            # Billboard Image
+            header.billboard_image:
+              type: file
+              label: "Billboard Image"
+              multiple: false
+              destination: "theme@:/images"
+              random_name: true
+              avoid_overwriting: false
+              limit: 10
+              accept:
+                - image/*
+            # Background Background Image
+            header.billboard_background_image:
+              type: file
+              label: "Background Background Image"
+              multiple: false
+              destination: "theme@:/images"
+              random_name: true
+              avoid_overwriting: false
+              limit: 10
+              accept:
+                - image/*
+            # Quote Text
+            header.quote_text:
+              type: text
+              label: "Quote Text"
+              size: long
