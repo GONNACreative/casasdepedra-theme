@@ -1,11 +1,14 @@
 <!-- Main Home -->
 
 {% block main_home %}
-  <div class="content">
-    <div class="content-box">
-      <div class="content-item">
-        {{ page.content }}
+  <!-- Content -->
+  {% if page.content != "" %}
+    <div class="content left col-large-1-1">
+      <div class="content-box">
+        <div class="content-item">
+          {{ page.content|raw }}
+        </div>
       </div>
     </div>
-  </div>
+  {% endif %}
 {% endblock %}

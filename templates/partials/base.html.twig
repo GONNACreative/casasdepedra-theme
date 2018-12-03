@@ -20,19 +20,22 @@
           <div class="center-h-parent">
             <div class="center-h-child">
               <div class="left col-large-1-1">
-                <!-- Main -->
+                <!-- Home -->
                 {% if page.template == "home" %}
                   {% include "partials/main_home.html.twig" %}
-                {% elseif page.template == "left" %}
-                  {% include "partials/main_left.html.twig" %}
-                {% elseif page.template == "wide" %}
-                  {% include "partials/main_wide.html.twig" %}
-                {% elseif page.template == "right" %}
-                  {% include "partials/main_right.html.twig" %}
+                <!-- About -->
+                {% elseif page.template == "about" %}
+                  {% include "partials/main_about.html.twig" %}
+                <!-- Houses -->
+                {% elseif page.template == "houses" %}
+                  {% include "partials/main_houses.html.twig" %}
+                <!-- House -->
                 {% elseif page.template == "house" %}
-                  {% include "partials/main_right.html.twig" %}
-                {% elseif page.template == "list" %}
-                  {% include "partials/main_list.html.twig" %}
+                  {% include "partials/main_house.html.twig" %}
+                <!-- Garden -->
+                {% elseif page.template == "garden" %}
+                  {% include "partials/main_garden.html.twig" %}
+                <!-- Default -->
                 {% else %}
                   {% include "partials/main.html.twig" %}
                 {% endif %}

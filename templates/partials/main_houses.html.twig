@@ -1,23 +1,41 @@
-<!-- Main List -->
+<!-- Main Houses -->
 
 {% block main_wide %}
-  <div class="content col-large-1-1">
+  <div class="content left col-large-1-1">
     <div class="content-box">
-      <div class="content-item">
-        <h1 class="extra-large text-center pink-500-cl">{{ page.header.title }}</h1>
-      </div>
+      <!-- Title -->
+      {% if page.header.title != "" %}
+        <div class="content-item">
+          <h1 class="extra-large text-center no-margin pink-500-cl">{{ page.header.title }}</h1>
+          {% if page.header.price_label != "" %}
+            <p class="nano text-center no-margin gray-700-cl"><strong>{{ page.header.price_label }}</strong></p>
+          {% endif %}
+        </div>
+      {% endif %}
+      <!-- Cover image -->
       {% if page.header.cover_image != "" %}
         <div class="content-item">
           {% for asset in page.header.cover_image %}
-            <img src="{{ asset.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+            <img src="{{ url(asset.path) }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
           {% endfor %}
         </div>
+        <div class="separator tiny"></div>
       {% endif %}
-
-      <div class="content-item">
-        {{ page.content|raw }}
+    </div>
+  </div>
+  <!-- Content -->
+  {% if page.content != "" %}
+    <div class="content left col-large-1-1">
+      <div class="content-box">
+        <div class="content-item">
+          {{ page.content|raw }}
+        </div>
       </div>
-
+    </div>
+  {% endif %}
+  <!-- Houses -->
+  <div class="content col-large-1-1">
+    <div class="content-box">
       <div class="content-item col-large-1-1 altai-center">
         <div class="houses">
           <ul class="houses-box">
@@ -45,12 +63,6 @@
           </ul>
         </div>
       </div>
-
-      {% for image in page.media.images %}
-        <div class="content-item col-large-3-1">
-          {{ image.lightbox(1024,768).cropZoom(100,50).html() }}
-        </div>
-      {% endfor %}
     </div>
   </div>
 {% endblock %}

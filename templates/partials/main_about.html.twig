@@ -1,0 +1,43 @@
+<!-- Main About -->
+
+{% block main_about %}
+  <div class="content left col-large-1-1">
+    <div class="content-box">
+      <!-- Title -->
+      {% if page.header.title != "" %}
+        <div class="content-item">
+          <h1 class="extra-large text-center no-margin pink-500-cl">{{ page.header.title }}</h1>
+        </div>
+      {% endif %}
+      <!-- Cover image -->
+      {% if page.header.cover_image != "" %}
+        <div class="content-item">
+          {% for asset in page.header.cover_image %}
+            <img src="{{ url(asset.path) }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+          {% endfor %}
+        </div>
+        <div class="separator tiny"></div>
+      {% endif %}
+    </div>
+  </div>
+  <!-- Content -->
+  {% if page.content != "" %}
+    <div class="content left col-small-1-1">
+      <div class="content-box">
+        <div class="content-item">
+          {{ page.content|raw }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <!-- Sidebar content -->
+  {% if page.header.sidebar_content != "" %}
+    <div class="aside right col-nano-1-1">
+      <div class="aside-box">
+        <div class="aside-item">
+          {{ page.header.sidebar_content|markdown }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}
