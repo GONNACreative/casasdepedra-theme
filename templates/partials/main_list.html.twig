@@ -6,11 +6,14 @@
       <div class="content-item">
         <h1 class="extra-large text-center pink-500-cl">{{ page.header.title }}</h1>
       </div>
-      <div class="content-item">
-        {% for asset in page.header.cover_image %}
-          <img src="{{ asset.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
-        {% endfor %}
-      </div>
+      {% if page.header.cover_image != "" %}
+        <div class="content-item">
+          {% for asset in page.header.cover_image %}
+            <img src="{{ asset.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <div class="content-item">
         {{ page.content|raw }}
       </div>
@@ -21,15 +24,15 @@
             {% for item in page.children if item != page %}
               <li class="houses-item">
                 <div class="houses-left">
-                  {% for image in item.header.cover_image %}
+                  {% for image in item.header.house_thumb_image %}
                     <img src="{{ image.path }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
                   {% endfor %}
                 </div>
                 <div class="houses-right">
                   <a href="{{item.url}}" class="link large gray wide hover-underline">{{ item.title }}</a>
                   <div class="separator tiny"></div>
-                  <p class="tiny wide left">{{ item.header.house_description }}</p>
-                  <div class="separator small"></div>
+                  <p class="tiny wide left description">{{ item.header.house_description }}</p>
+                  <div class="separator tiny"></div>
                   <div class="wrap-left auto">
                     <p class="nano left no-margin price-label gray-700-cl">{{ item.header.price_label }}</p>
                   </div>

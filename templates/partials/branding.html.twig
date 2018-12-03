@@ -4,7 +4,9 @@
   <div class="branding-box">
     <div class="branding-item">
       <a href="{{ base_url }}" class="link tiny">
-        <img src="https://via.placeholder.com/48x48" />
+        {% for asset in config.plugins.casasdepedra.branding_image %}
+          <img src="{{ url(asset.path) }}" title="{{ site.title }}" alt="Image :: {{ site.title }}"/>
+        {% endfor %}
       </a>
     </div>
   </div>

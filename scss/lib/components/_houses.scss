@@ -128,6 +128,11 @@ $class: "houses";
     .#{$class}-box {
       .#{$class}-item {
       }
+      .#{$class}-right {
+        .description {
+          min-height: 112px;
+        }
+      }
     }
   }
 }

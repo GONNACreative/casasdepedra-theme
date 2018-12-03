@@ -10,6 +10,9 @@ $class: "branding";
     .#{$class}-item {
       float: left;
       padding: 8px;
+      img {
+        max-height: 48px;
+      }
     }
   }
 }

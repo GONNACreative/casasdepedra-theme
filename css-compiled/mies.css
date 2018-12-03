@@ -1501,6 +1501,8 @@ strong {
     .branding .branding-box .branding-item {
       float: left;
       padding: 8px; }
+      .branding .branding-box .branding-item img {
+        max-height: 48px; }
 
 .navigation .navigation-box {
   list-style-type: none;
@@ -1515,6 +1517,9 @@ strong {
       padding: 14px 0;
       text-decoration: none;
       text-transform: uppercase; }
+    .navigation .navigation-box .navigation-item.altai-trigger {
+      display: none;
+      visibility: hidden; }
 
 @media (max-width: 359px) {
   .navigation .navigation-box .navigation-item {
@@ -1707,6 +1712,9 @@ strong {
     height: auto;
     padding: 8px 32px 32px;
     width: 100%; } }
+@media (min-width: 1260px) {
+  .houses .houses-box .houses-right .description {
+    min-height: 112px; } }
 .bookings {
   box-sizing: border-box;
   float: left;

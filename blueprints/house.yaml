@@ -12,6 +12,19 @@ form:
         content:
           type: tab
           fields:
+            # House thumb image
+            header.house_thumb_image:
+              type: file
+              label: "House Thumb Image"
+              size: long
+              style: vertical
+              multiple: false
+              destination: "theme@:/images"
+              random_name: true
+              avoid_overwriting: false
+              limit: 10
+              accept:
+                - image/*
             # House Description
             header.house_description:
               type: textarea

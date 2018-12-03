@@ -15,6 +15,9 @@ $class: "navigation";
         text-decoration: none;
         text-transform: uppercase;
       }
+      &.altai-trigger {
+        @include hide-block-element;
+      }
     }
   }
 }

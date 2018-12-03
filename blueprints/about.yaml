@@ -1,0 +1,25 @@
+@extends:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        sidebar:
+          type: tab
+          title: Sidebar
+          fields:
+            # Sidebar content
+            header.sidebar_content:
+              type: markdown
+              markdown: true
+              validate:
+                type: textarea
+              label: "Description"
+              rows: 4
+              size: long
+              style: vertical
