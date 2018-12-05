@@ -1601,7 +1601,7 @@ strong {
       padding: 8px;
       width: 100%; }
       .billboard .billboard-box .billboard-item img {
-        max-width: 196px; }
+        max-width: 360px; }
 
 @media (max-width: 359px) {
   .billboard {

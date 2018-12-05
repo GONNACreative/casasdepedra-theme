@@ -3,10 +3,10 @@
 {% block hero %}
     {% if page.header.billboard_background_image != "" %}
       {% for asset in page.header.billboard_background_image %}
-        <div class="universal hero pink-500-bg" style="background-image: url('{{ asset.path }}');">
+        <div class="universal hero white-100-bg" style="background-image: url('{{ asset.path }}');">
       {% endfor %}
     {% else %}
-      <div class="universal hero pink-500-bg">
+      <div class="universal hero white-100-bg">
     {% endif %}
       <div class="universal-box">
         <div class="universal-item">
