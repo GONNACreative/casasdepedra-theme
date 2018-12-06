@@ -71,7 +71,8 @@
       <div class="content-box">
         {% for image in page.media.images %}
           <div class="content-item col-large-3-1">
-            {{ image.lightbox(960,640).cropZoom(604,340).html("Casas de Pedra", "Thumbnail") }}
+            <!-- {{ image.lightbox(960,640).cropZoom(604,340).html("Casas de Pedra", "Thumbnail") }} -->
+            <a class="gallery" rel="lightbox" data-width="960" data-height="640" href="{{ image.url }}">{{ image.cropZoom(604,340).html("Casas de Pedra", "Thumbnail") }}</a>
           </div>
         {% endfor %}
       </div>

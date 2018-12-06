@@ -15,6 +15,7 @@
     {% block stylesheets %}
         {% do assets.addCss("theme://vendor/assets/stylesheets/normalize.css", 100) %}
         {% do assets.addCss("theme://css-compiled/mies.css", 99) %}
+        {% do assets.addCss("theme://vendor/assets/stylesheets/featherlight.gallery.css", 1) %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -24,7 +25,8 @@
         {% do assets.addJs("theme://js/altai_off.js", 98) %}
         {% do assets.addJs("theme://js/altai_scroll.js", 97) %}
         {% do assets.addJs("theme://js/altai_toggle.js", 96) %}
-        {% do assets.addJs("theme://js/main.js", 000) %}
+        {% do assets.addJs("theme://vendor/assets/javascripts/featherlight.gallery.js", 2) %}
+        {% do assets.addJs("theme://js/main.js", 1) %}
     {% endblock %}
     {{ assets.js() }}
   {% endblock head%}
