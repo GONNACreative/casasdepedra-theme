@@ -19,11 +19,14 @@ $class: "houses";
       float: left;
       padding: 32px;
       width: 50%;
+      img {
+        float: left;
+      }
     }
     .#{$class}-right {
       background-color: $white;
       float: left;
-      height: 297px;
+      height: 288px;
       padding: 32px;
       width: 50%;
     }
@@ -118,6 +121,11 @@ $class: "houses";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+      }
+      .#{$class}-right {
+        .description {
+          min-height: 112px;
+        }
       }
     }
   }

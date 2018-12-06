@@ -1,0 +1,27 @@
+@extends:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          fields:
+            # Cover image
+            header.cover_image:
+              type: file
+              label: "Cover Image"
+              size: long
+              style: vertical
+              multiple: false
+              destination: "theme@:/images"
+              random_name: true
+              avoid_overwriting: false
+              limit: 10
+              accept:
+                - image/*

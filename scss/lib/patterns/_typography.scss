@@ -168,7 +168,25 @@ del    { text-decoration: line-through; }
 em     { font-style: italic; }
 mark   { background-color: $yellow; }
 small  { font-size: 70%; }
-strong { font-weight: bold; }
+strong { color: $gray-700; font-weight: bold; }
+
+// Aside
+
+.aside {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 4px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 // Media Queries
 
